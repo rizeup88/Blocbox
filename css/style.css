@@ -53,8 +53,13 @@
    .container {
      width: 750px;
    }
+}
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
  }
- @media (min-width: 992px) {
+ @media (min-width: 768px) {
    .container {
      width: 970px;
    }
@@ -73,6 +78,18 @@
      width: 1170px;
    }
  }
+ /* iPhone 6 display (Portrait/Landscape) */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+}
+/* iPad with Retina Display (Portrait/Landscape) */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+}
 
  /* HEADER */
  header {
