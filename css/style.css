@@ -1,4 +1,4 @@
- html, body{
+html, body{
    overflow-x: hidden;
  }
  body {
@@ -66,6 +66,9 @@
    }
    .one-fourth {
      width:21%;
+   }
+   .one-sixth {
+    width: 17%;
    }
  }
  @media (min-width: 1200px) {
@@ -158,13 +161,13 @@
    display: inline-block;
  }
  .benefits i {
-   color:#3498DB;
+   color:#234a65;
    font-size:60px;
    margin:0;
    vertical-align: middle;
  }
  .benefits h2 {
-   color:#3498DB;
+   color:#234a65;
  }
 
  /* PRICING */
@@ -245,4 +248,33 @@
    color: #FEFEFE;
    line-height: 15px;
    font-style:italic;
+ }
+ /* MORE FEATURES */
+ .morefeatures {
+   padding:5em 0;
+   text-align: center;
+ }
+ .morefeatures p {
+   font-size: 18px;
+   margin-top: 30px;
+ }
+ .morefeatures h2 {
+   color:#234a65;
+ }
+ .morefeatures ul li {
+   list-style-type: none;
+ }
+ .morefeatures ul li i {
+  font-size: 72px;
+  color: #234a65;
+  text-align: center;
+  margin-top: 50px;
+ }
+ .morefeatures ul li p{
+  font-size: 28px;
+  color: #234a65;
+ }
+ .morefeatures blockquote{
+  text-align: center;
+  font-size: 16px;
  }
