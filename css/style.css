@@ -132,7 +132,9 @@ html, body{
  header .hero img {
    display: block;
    margin:3em auto 0;
- }
+   max-width: 100%;
+   height: auto;
+}
 
  /* BUTTONS */
  .btn {
