@@ -294,7 +294,6 @@ html, body{
    height: 150px;
    position: relative;
    overflow: hidden;
-   z-index: 0;
  }
  footer p, footer nav ul {
    font-size:14px;
