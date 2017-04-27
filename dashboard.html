@@ -41,11 +41,20 @@
       <div class="settings">
        <img src="images/screenshot.jpeg" style="width:35px;height:35px;">
        <p style="color:#FFFFFF;">Chase Smith</p>
-       <a href="#"><i class="fa fa-cog"></i></a>
+       <ul class="menuaccount">
+            <li>
+              <a href="#" class="fa fa-gear"></a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-gear"></i> My Account</a></li>
+                  <li><a href="#"><i class="fa fa-users"></i> Collaborators</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
       </div>
    </nav>
    <main role="main">
-   <!-- Benefits -->
+   <!-- All Content -->
    <section class="content">
      <div class="container">
        <div class="header">
@@ -129,6 +138,9 @@
     $( "#menu" ).click(function() {
     $("#left-nav").toggleClass("open", 200);
      });
+   </script>
+   <script type="text/javascript">
+    $(".menuaccount").dropit();
    </script>
  </body>
  </html>

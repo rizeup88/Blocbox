@@ -4,6 +4,7 @@ html, body{
  body {
    font-family: "Mada", Helvetica, Arial, sans-serif;
    color:#333333;
+   margin:0;
  }
  h1, h2, h3, h4, h5, h6 {
    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -431,6 +432,7 @@ html, body{
    border-radius: 50%;
    margin-left:10px;
    display: inline-block;
+   margin-top: 5px;
  }
  .left-nav .settings p {
    display: inline-block;
@@ -438,6 +440,7 @@ html, body{
    padding-top: 8px;
    font-weight: 400;
    margin:0 0 0 10px;
+   margin-top: 5px;
  }
  .left-nav .settings a {
    color:#FFFFFF;
@@ -445,7 +448,10 @@ html, body{
    text-align: right;
    float: right;
    margin-right:10px;
-   margin-top:8px;
+   margin-top: 0px;
+ }
+ .left-nav .settings ul {
+   text-align: right;
  }
  /* CONTENT */
  .content {
