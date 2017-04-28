@@ -442,13 +442,64 @@ html, body{
    margin:0 0 0 10px;
    margin-top: 5px;
  }
- .left-nav .settings a {
+ .left-nav .settings ul {
    color:#FFFFFF;
    text-decoration: none;
-   text-align: right;
+   text-align: left;
    float: right;
-   margin-right:10px;
-   margin-top: 0px;
+   margin-right:4px;
+   margin-top: 18px;
+ }
+ .left-nav .settings ul a {
+   color:#FFFFFF;
+   text-decoration: none;
+   text-align: left;
+   float: left;
+   margin-right:14px;
+   margin-top:-4px;
+ }
+ .left-nav .settings .dropit ul {
+   color:#FFFFFF;
+   text-decoration: none;
+   text-align: left;
+   float: right;
+   min-width: 100px;
+   padding:15px;
+   margin-top: -165px;
+ }
+ .left-nav .settings .dropit ul a {
+   color:#FFFFFF;
+   text-decoration: none;
+   text-align: left;
+   float: left;
+   margin-top: 5px;
+   margin-right:1px;
+   bottom:100%
+ }
+ .left-nav .settings .dropit-submenu {
+  position: absolute;
+  border-style: solid;
+  border-width: 0 -8px -8px;
+  border-color: #FFFFFF transparent;
+  display: inline-block;
+  width: 0;
+  height:120px;
+  z-index: 1;
+  bottom: 50px;
+  right: -3px;
+ }
+ .left-nav .settings .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-top: 10.2em;
+  top: -10px;
+  right: 10px;
  }
  /* CONTENT */
  .content {
