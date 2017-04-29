@@ -14,8 +14,8 @@
 
  <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/font-awesome.css">
- <link rel="stylesheet" href="css/animate.css">
  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/dropit.css">
 
  </head>
  <body class="dashboard">
@@ -37,9 +37,18 @@
        </ul>
      </div>
       <div class="settings">
-       <img src="images/screenshot.jpeg" style="width:100px;height:100px;">
+       <img src="images/screenshot.jpeg" style="width:35px;height:35px;">
        <p>Chase Smith</p>
-       <a href="#"><i class="fa fa-cog"></i></a>
+       <ul class="account">
+            <li>
+              <a href="#" class="fa fa-gear"</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-gear"></i> My Account</a></li>
+                  <li><a href="#"><i class="fa fa-users"></i> Collaborators</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
       </div>
    </nav>
    <main role="main">
@@ -48,13 +57,22 @@
      <div class="container">
        <div class="header">
          <h1>Images</h1>
-         <a href="#" class="btn">+ Add</a>
+         <ul class="menu">
+            <li>
+              <a href="#" class="btn">+ Add</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
        </div>
      </div>
      <div class="container">
        <div class="content-item">
          <div class="item-box">
-           <img src="http://content.sportslogos.net/news/2016/01/timbers-2016-crest-2.png" style="width:650px;height:650px;">
+           <img src="http://content.sportslogos.net/news/2016/01/timbers-2016-crest-2.png" style="width:400px;height:400px;">
          </div>
        </div>
        <div class="content-item">
@@ -75,5 +93,14 @@
      </div>
    </section>
  </main>
+ <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/dropit.js"></script>
+   <script type="text/javascript">
+    $(".menu").dropit();
+    $( "#menu" ).click(function() {
+    $("#left-nav").toggleClass("open", 200);
+    });
+    $(".account").dropit();
+   </script>
  </body>
  </html>
